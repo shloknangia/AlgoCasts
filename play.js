@@ -1,7 +1,5 @@
 
 str = "apple";
-let rev = '';
-for (let c of str){
-	rev = c + rev;
-}
-console.log(rev);
+debugger;
+console.log(str.split('').reduce((reversed, character) => character + reversed , ''));
+// console.log(rev);

@@ -16,7 +16,7 @@ function reverse_1(str) { //1
 	return revStr;
 }
 
-function reverse(str) { //2
+function reverse_2(str) { //2
 
 	// const arr = str.split('');
 	// arr.reverse();
@@ -25,7 +25,7 @@ function reverse(str) { //2
 }
 
 
-function reverse(str) { //3
+function reverse_3(str) { //3
 
 	let rev = '';
 	for (let c of str){
@@ -33,5 +33,12 @@ function reverse(str) { //3
 	}
 	return rev;
 }
+
+
+function reverse(str) { //4
+	// debugger;
+	return str.split('').reduce((reversed, character) => character + reversed , '')
+}
+// reverse('asdf');
 
 module.exports = reverse;
